@@ -146,7 +146,7 @@ function ScreenRecommend({ nav, setSelected, openAudit }) {
 
       <ScreenBlock className="pt-2 pb-4">
         <div className="px-[var(--gutter)] max-w-[920px] mx-auto">
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {MODELS.map((m, i) => (
               <RecCard key={m.id} m={m} nav={nav} setSelected={setSelected} primary={i === 0}
                 checked={checkedIds.includes(m.id)}
